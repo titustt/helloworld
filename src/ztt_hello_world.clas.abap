@@ -1,0 +1,23 @@
+CLASS ztt_hello_world DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    METHODS main.
+  PROTECTED SECTION.
+    METHODS display.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ztt_hello_world IMPLEMENTATION.
+  METHOD main.
+    CALL METHOD me->display( ).
+  ENDMETHOD.
+
+  METHOD display.
+    WRITE: |Hello World !!|.
+  ENDMETHOD.
+ENDCLASS.
